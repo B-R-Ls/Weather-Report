@@ -5,7 +5,7 @@ Webpage based around the use of online apis
 
 # Description
 
-![Webpage]
+![Webpage](./assets/images/Webpage.PNG)
 
 I created a webpage that connects to the OpenWeatherMap API and applies the information onto cards. With this webpage i was able to properly connect APIs and use them in variables to both fetch further data.
 
