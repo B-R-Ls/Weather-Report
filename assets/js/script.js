@@ -58,7 +58,7 @@ citylist.on('click', function(event) {
     console.log(event.target.lastChild.data)
 
     $.ajax({
-        url: 'http://api.openweathermap.org/geo/1.0/direct?q='+ event.target.lastChild.data +'&appid=e9e30400559d99c2dce675aec0e4ad08',
+        url: 'https://api.openweathermap.org/geo/1.0/direct?q='+ event.target.lastChild.data +'&appid=e9e30400559d99c2dce675aec0e4ad08',
         method: 'GET',
     }).then(function (response) {
 
@@ -66,7 +66,7 @@ citylist.on('click', function(event) {
         var lon = response[0].lon;
 
         $.ajax({
-            url: 'http://api.openweathermap.org/data/2.5/forecast?lat='+ lat +'&lon=' + lon + '&appid=e9e30400559d99c2dce675aec0e4ad08',
+            url: 'https://api.openweathermap.org/data/2.5/forecast?lat='+ lat +'&lon=' + lon + '&appid=e9e30400559d99c2dce675aec0e4ad08',
             method: 'GET',
         }).then(function (response) {
 
